@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace COMP123_Lesson04_Part_2nd
 {
-    class Villain : Hero
+    class Villain : Character
     {
         //PRIVATE PROPERTIES+++++++++++++++++++++++++++++++++++++++
-        private string name;
+        private bool greed = true;
 
-        public Villain(string name, int health, int smarts, string gender)
-            : base(health, smarts, gender)
+        public Villain(string name, int health, int smarts, string gender) :
+            base(name, health, smarts, gender)
         {
-            this.name = name;
-
+            this.showProfile();
         }
 
         //PUBLIC METHODS++++++++++++++++++++++++++++++++++++++++++++++
@@ -23,5 +22,6 @@ namespace COMP123_Lesson04_Part_2nd
         {
             Console.WriteLine("Doing bad things...YEAH!");
         }
+
     }
 }

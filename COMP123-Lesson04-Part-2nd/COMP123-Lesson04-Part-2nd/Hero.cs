@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace COMP123_Lesson04_Part_2nd
 {
-    class Hero
+    //HERO SUBCLASS OR CHARACER SUPER CLASS
+    class Hero : Character
     {
         //PRIVATE PROPERTIES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        private bool bravery = true;
-        private int health;
-        private int smarts;
-        private string gender;
+        private bool courage = true;
 
         //CONSTRUCTOR+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public Hero(int health, int smarts, string gender)
+        public Hero(string name, int health, int smarts, string gender) :
+            base(name, health, smarts, gender)
         {
-            this.health = health;
-            this.smarts = smarts;
-            this.gender = gender;
-
+            this.showProfile();
         }
         //PUBLIC METHODS
         public void doesGoodThings()
