@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace COMP123_Lesson04_Part_2nd
 {
+    //Villain SUBCLASS 
     class Villain : Character
     {
         //PRIVATE PROPERTIES+++++++++++++++++++++++++++++++++++++++

@@ -12,10 +12,11 @@ namespace COMP123_Lesson04_Part_2nd
         {
             Hero myHero = new Hero("Bravia", 7, 8, "female");
             myHero.doesGoodThings();
+            Console.WriteLine("");
 
             Villain myVillain = new Villain("Spidergirl", 9, 9, "female");
             myVillain.doesBadThings();
-
+            Console.WriteLine("");
 
 
 

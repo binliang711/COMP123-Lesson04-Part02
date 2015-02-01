@@ -9,7 +9,7 @@ namespace COMP123_Lesson04_Part_2nd
     //CHARACTER SUPER CLASS +++++++++++++++++++++++++++++++++++++++++++++++++++
     class Character
     {
-        //PRIVATE PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++
+        //PROTECTED PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++
         protected string name; 
         protected int health;
         protected int smarts;
